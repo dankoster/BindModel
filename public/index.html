@@ -1,0 +1,29 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ractive - BindModel</title>
+    <meta name="description" content="A cool thing made with HyperDev">
+    <link id="favicon" rel="icon" href="https://hyperdev.com/favicon.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    
+    <script id="template" type="text/ractive">
+        <div>width:<input id="width" value="{{width}}" proxy-click="show" /></div>
+        <div>height:<input id="height" value="{{height}}" /></div>
+        <div>Moustache Calculate Area: {{width * height}}</div>
+        <div><button on-click="Calculate">Calculate Area in JS</button></div>
+    </script>
+    
+    <div id="el">Loading...</div>
+
+    <script src="https://cdn.ractivejs.org/latest/ractive-legacy.js"></script>
+    <script src="/bindModel.js"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
